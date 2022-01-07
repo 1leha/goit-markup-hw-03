@@ -1,0 +1,221 @@
+:root {
+  /* Переменные основных цветов */
+  --color-brand: #2196f3;
+  --color-primary: #212121;
+  --color-secondary: #757575;
+  --color-third: #f5f4fa;
+  --color-fourth: #2f303a;
+  --color-white: #ffffff;
+  --color-white60: rgba(250, 255, 255, 0.6);
+
+  /* Переменные цветов активности */
+  --color-active: #2196f3;
+
+  /* Шрифты */
+  --primary-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+}
+
+/* Глобальные стили страницы */
+body {
+  font-family: var(--primary-font), sans-serif;
+  background-color: var(--color-white);
+  color: var(--color-primary);
+}
+
+/* Обнуляет подчеркивание ссылок */
+.link {
+  text-decoration: none;
+}
+
+/* Обнуляет оформления списков */
+.list {
+  list-style-type: none;
+}
+
+/* *Стили для логотипа */
+.logo {
+  font-family: var(--secondary-font);
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  color: var(--color-primary);
+}
+.logo-blue {
+  color: var(--color-brand);
+}
+
+/* *Стили для кнопок */
+.button {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+
+  background-color: var(--color-third);
+  color: var(--color-primary);
+}
+/* События кнопок */
+.button:hover,
+.button:focus {
+  background-color: var(--color-active);
+  color: var(--color-white);
+}
+
+/* *Стили для меню */
+.menu {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+}
+.menu .link {
+  color: var(--color-primary);
+}
+/* События меню */
+.menu .link:hover,
+.menu .link:focus {
+  color: var(--color-active);
+}
+.menu .link-active {
+  color: var(--color-active);
+}
+
+/* *Стили для контактов */
+.email,
+.phone {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--color-secondary);
+}
+/* События контактов */
+.phone:hover,
+.phone:focus,
+.email:hover,
+.email:focus {
+  color: var(--color-active);
+}
+
+/* *Стили для заголовков */
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* Стили для скрытых заголовков
+(не изучали. Возможно не так, потом переделаю...) */
+.title-hidden {
+  display: none;
+  font-size: var(--fsize-title);
+}
+
+/* *Стили для Героя */
+.hero {
+  background-color: var(--color-fourth);
+}
+.hero .title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--color-white);
+}
+.hero .button {
+  font-weight: 700;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  background-color: var(--color-brand);
+  color: var(--color-white);
+}
+.hero .button:hover,
+.hero .button:focus {
+  background-color: var(--color-third);
+  color: var(--color-primary);
+}
+
+/* *Стили для "Особенности" */
+.peculiarities .title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: left;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.peculiarities .text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--color-secondary);
+}
+
+/* Стили для "Чем мы занимаемся"
+ */
+
+/* *Стили для "Наша команда"
+ */
+.our-team .name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.our-team .profession {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--color-secondary);
+}
+
+/* *Стили для Портфолио
+ */
+.portfolio-list .title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  text-align: left;
+  letter-spacing: 0.06em;
+}
+.portfolio-list .description {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+
+  color: var(--color-secondary);
+}
+
+/* *Стили для Футер */
+.footer {
+  background-color: var(--color-fourth);
+}
+.footer .logo {
+  color: var(--color-white);
+}
+.address {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--color-white);
+}
+.address .link {
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
