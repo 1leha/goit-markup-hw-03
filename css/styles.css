@@ -4,7 +4,8 @@
   --color-primary: #212121;
   --color-secondary: #757575;
   --color-third: #f5f4fa;
-  --color-fourth: #2f303a;
+  --color-fourth: #52535c;
+  --color-cards-portfolio: #eee;
   --color-white: #ffffff;
   --color-white60: rgba(250, 255, 255, 0.6);
 
@@ -51,6 +52,12 @@ h6 {
   margin: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /* Глобальные стили страницы */
 body {
   font-family: var(--primary-font), sans-serif;
@@ -64,9 +71,7 @@ section {
 }
 
 .header {
-  /* !удалить */
-  /* outline: 1px solid tomato;
-  background-color: peachpuff; */
+  border-bottom: 1px solid #ececec;
 }
 .container {
   width: 1200px;
@@ -106,6 +111,9 @@ section {
 
 /* *Стили для кнопок */
 .button {
+  min-width: 73px;
+  padding: 6px 22px;
+
   cursor: pointer;
   font-size: 16px;
   font-weight: 500;
@@ -114,6 +122,8 @@ section {
 
   background-color: var(--color-third);
   color: var(--color-primary);
+
+  border-radius: 4px;
 }
 /* События кнопок */
 .button:hover,
@@ -210,9 +220,9 @@ section {
   color: var(--color-white);
 }
 .hero .button {
-  width: 200px;
+  min-width: 200px;
   height: 50px;
-  border-radius: 4px;
+  padding: 10px 32px;
 
   font-weight: 700;
   line-height: 1.88;
@@ -221,6 +231,8 @@ section {
 
   background-color: var(--color-brand);
   color: var(--color-white);
+
+  border-radius: 4px;
 }
 .hero .button:hover,
 .hero .button:focus {
@@ -274,11 +286,6 @@ section {
 .specialization .item {
   flex-basis: calc(100% / 3 - 30px);
 }
-.specialization .image {
-  display: block;
-  min-width: 100%;
-  min-height: 100%;
-}
 
 /* *Стили для "Наша команда"
  */
@@ -304,7 +311,6 @@ section {
   border-radius: 0px 0px 4px 4px;
 }
 .our-team .image {
-  display: block;
   margin-bottom: 30px;
 }
 .our-team .name {
@@ -329,6 +335,30 @@ section {
 
 /* *Стили для Портфолио
  */
+.portfolio {
+}
+.wrapper.buttons-list {
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.buttons-list > .item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.wrapper.portfolio-list {
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+.portfolio-list > .item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+  background-color: var(--color-white);
+  outline: 1px solid var(--color-cards-portfolio);
+}
+
 .portfolio-list .title {
   font-weight: 700;
   font-size: 18px;
@@ -342,6 +372,9 @@ section {
   letter-spacing: 0.03em;
 
   color: var(--color-secondary);
+}
+.portfolio-list .content {
+  padding: 20px 24px;
 }
 
 /* *Стили для Футер */
