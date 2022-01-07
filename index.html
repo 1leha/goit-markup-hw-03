@@ -10,8 +10,9 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>goit-markup-hw-02 (Домашка 02)</title>
+    <title>goit-markup-hw-03 (Домашка 03)</title>
   </head>
 
   <body>
@@ -19,31 +20,33 @@
     <header class="header">
       <!-- Контейнер для контента -->
       <div class="container">
-        <!-- Навигация -->
-        <nav class="header-navigation">
-          <a class="link header-logo logo" href="./index.html"
-            ><span class="logo-blue">Web</span>Studio</a
-          >
-          <ul class="list menu">
-            <li>
-              <a class="link link-active" href="">Студия</a>
+        <div class="wrapper">
+          <!-- Навигация -->
+          <nav class="header-navigation">
+            <a class="header-logo logo" href="./index.html"
+              ><span class="logo-blue">Web</span>Studio</a
+            >
+            <ul class="menu">
+              <li class="item">
+                <a class="link link-active" href="">Студия</a>
+              </li>
+              <li class="item">
+                <a class="link" href="./portfolio.html">Портфолио</a>
+              </li class="item">
+              <li>
+                <a class="link" href="">Контакты</a>
+              </li class="item">
+            </ul>
+          </nav>
+          <ul class="header-contacts">
+            <li class="item">
+              <a class="email" href="mailto:info@example.com">info@example.com</a>
             </li>
-            <li>
-              <a class="link" href="./portfolio.html">Портфолио</a>
-            </li>
-            <li>
-              <a class="link" href="">Контакты</a>
+            <li class="item">
+              <a class="phone" href="tel:+380991111111">+38 099 111 11 11</a>
             </li>
           </ul>
-        </nav>
-        <ul class="list header-contacts">
-          <li>
-            <a class="link email" href="mailto:info@example.com">info@example.com</a>
-          </li>
-          <li>
-            <a class="link phone" href="tel:+380991111111">+38 099 111 11 11</a>
-          </li>
-        </ul>
+        </div>
       </div>
     </header>
 
@@ -64,25 +67,25 @@
           <!-- Скрытый заголовок -->
           <h2 class="title title-hidden">Особенности</h2>
           <ul class="list">
-            <li>
+            <li class="item">
               <h3 class="title">Внимание к деталям</h3>
               <p class="text">
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
-            <li>
+            <li class="item">
               <h3 class="title">Пунктуальность</h3>
               <p class="text">
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
-            <li>
+            <li class="item">
               <h3 class="title">Планирование</h3>
               <p class="text">
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
-            <li>
+            <li class="item">
               <h3 class="title">Современные технологии</h3>
               <p class="text">
                 Значимость этих проблем настолько очевидна, что реализация плановых заданий.
@@ -98,8 +101,8 @@
         <div class="container">
           <h2 class="title">Чем мы занимаемся</h2>
           <!-- Контейнер для флекса -->
-          <ul class="list">
-            <li>
+          <ul class="wrapper">
+            <li class="item">
               <img
                 class="image"
                 width="370"
@@ -107,7 +110,7 @@
                 alt="Разработка десктоп приложений"
               />
             </li>
-            <li>
+            <li class="item">
               <img
                 class="image"
                 width="370"
@@ -115,8 +118,9 @@
                 alt="Разработка мобильных приложений"
               />
             </li>
-            <li>
+            <li class="item">
               <img class="image" width="370" src="img/spec_box3.jpg" alt="WEB design" />
+            </li>
             </li>
           </ul>
         </div>
@@ -126,8 +130,8 @@
         <!-- Контейнер для контента -->
         <div class="container">
           <h2 class="title">Наша команда</h2>
-          <ul class="list our-team-list">
-            <li>
+          <ul class="list wrapper">
+            <li class="item">
               <img
                 class="image"
                 width="270"
@@ -137,7 +141,7 @@
               <h3 class="name">Игорь Демьяненко</h3>
               <p class="profession">Product Designer</p>
             </li>
-            <li>
+            <li class="item">
               <img
                 class="image"
                 width="270"
@@ -147,7 +151,7 @@
               <h3 class="name">Ольга Репина</h3>
               <p class="profession">Frontend Developer</p>
             </li>
-            <li>
+            <li class="item">
               <img
                 class="image"
                 width="270"
@@ -157,7 +161,7 @@
               <h3 class="name">Николай Тарасов</h3>
               <p class="profession">Marketing</p>
             </li>
-            <li>
+            <li class="item">
               <img
                 class="image"
                 width="270"
@@ -180,7 +184,7 @@
           ><span class="logo-blue">Web</span>Studio</a
         >
         <address class="address">
-          <ul class="contacts list">
+          <ul class="contacts">
             <li>
               <p class="location">г. Киев, пр-т Леси Украинки, 26</p>
             </li>
