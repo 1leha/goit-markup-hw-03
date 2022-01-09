@@ -23,13 +23,6 @@
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-/* *,
-::before,
-::after {
-  box-sizing: border-box;
-} */
-
-
 /* Глобальные стили страницы */
 body {
   font-family: var(--primary-font);
@@ -39,8 +32,6 @@ body {
 }
 
 button {
-  font-family: var(--primary-font);
-
   border: none;
 }
 
@@ -283,6 +274,8 @@ section {
   text-transform: uppercase;
 }
 .peculiarities .text {
+  margin-top: 10px;
+
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -362,10 +355,6 @@ section {
 }
 
 .wrapper.portfolio-list {
-  /* !удалить */
-  outline: 1px solid green;
-  background-color: lightblue;
-
   flex-wrap: wrap;
   margin-top: -30px;
   margin-left: -30px;
@@ -374,14 +363,12 @@ section {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
-  background-color: var(--color-white);
 
-  /* !удалить */
-  outline: 1px solid tomato;
-  background-color: peachpuff;
+  background-color: var(--color-white);
 }
 .portfolio-list .content {
   padding: 20px 24px;
+  
   border: 1px solid var(--color-cards-portfolio);
 }
 .portfolio-list .title {

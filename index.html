@@ -4,16 +4,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+
+    <!-- 
+    !При подключении сыслки нормалайзера из задания к домашке в консоле выдает: Refused to apply
+    !style from 'http://127.0.0.1:5500/node_modules/modern-normalize/modern-normalize.css' because
+    !its MIME type ('text/html') is not a supported stylesheet MIME type, and strict MIME checking is
+    !enabled. во вкладке дитулза "нетверк" - ошибка 404.
+    !Поэтому подключил нормалайзер из видео Саши Репеты... -->
+    <!-- <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css" /> -->
+
+    <!-- Нормалайзер из урока Саши Репеты -->
     <link
       rel="stylesheet"
-      href="https://github.com/sindresorhus/modern-normalize/blob/main/modern-normalize.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
+
     <link rel="stylesheet" href="./css/styles.css" />
     <title>goit-markup-hw-03 (Домашка 03)</title>
   </head>
@@ -43,7 +55,7 @@
           </nav>
           <ul class="header-contacts">
             <li class="item">
-              <a class="email" href="mailto:info@example.com">info@example.com</a>
+              <a class="email" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
             <li class="item">
               <a class="phone" href="tel:+380991111111">+38 099 111 11 11</a>
