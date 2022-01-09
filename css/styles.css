@@ -23,6 +23,27 @@
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+/* *,
+::before,
+::after {
+  box-sizing: border-box;
+} */
+
+
+/* Глобальные стили страницы */
+body {
+  font-family: var(--primary-font);
+
+  background-color: var(--color-white);
+  color: var(--color-primary);
+}
+
+button {
+  font-family: var(--primary-font);
+
+  border: none;
+}
+
 /* Обнуляет подчеркивание ссылок */
 p {
   margin: 0;
@@ -58,17 +79,6 @@ img {
   height: auto;
 }
 
-button {
-  border: none;
-}
-
-/* Глобальные стили страницы */
-body {
-  font-family: var(--primary-font), sans-serif;
-  background-color: var(--color-white);
-  color: var(--color-primary);
-}
-
 section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -82,6 +92,8 @@ section {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+
+  /* box-sizing: border-box; */
 }
 .wrapper {
   display: flex;
@@ -339,8 +351,7 @@ section {
 
 /* *Стили для Портфолио
  */
-.portfolio {
-}
+
 .wrapper.buttons-list {
   justify-content: center;
   align-items: center;
@@ -351,6 +362,10 @@ section {
 }
 
 .wrapper.portfolio-list {
+  /* !удалить */
+  outline: 1px solid green;
+  background-color: lightblue;
+
   flex-wrap: wrap;
   margin-top: -30px;
   margin-left: -30px;
@@ -360,9 +375,15 @@ section {
   margin-left: 30px;
   margin-top: 30px;
   background-color: var(--color-white);
-  outline: 1px solid var(--color-cards-portfolio);
-}
 
+  /* !удалить */
+  outline: 1px solid tomato;
+  background-color: peachpuff;
+}
+.portfolio-list .content {
+  padding: 20px 24px;
+  border: 1px solid var(--color-cards-portfolio);
+}
 .portfolio-list .title {
   font-weight: 700;
   font-size: 18px;
@@ -376,9 +397,6 @@ section {
   letter-spacing: 0.03em;
 
   color: var(--color-secondary);
-}
-.portfolio-list .content {
-  padding: 20px 24px;
 }
 
 /* *Стили для Футер */

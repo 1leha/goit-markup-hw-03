@@ -12,8 +12,11 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      href="https://github.com/sindresorhus/modern-normalize/blob/main/modern-normalize.css"
     />
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" /> -->
+    <!-- <link rel="stylesheet" href="./css/modern-normalize.css" /> -->
     <link rel="stylesheet" href="./css/styles.css" />
     <title>goit-markup-hw-03 (Домашка 03)</title>
   </head>
@@ -23,31 +26,31 @@
       <!-- Контейнер для контента -->
       <div class="container">
         <div class="wrapper">
-        <!-- Навигация -->
-        <nav class="header-navigation">
-          <a class="header-logo logo" href="./index.html"
-            ><span class="logo-blue">Web</span>Studio</a
-          >
-          <ul class="menu">
+          <!-- Навигация -->
+          <nav class="header-navigation">
+            <a class="header-logo logo" href="./index.html"
+              ><span class="logo-blue">Web</span>Studio</a
+            >
+            <ul class="menu">
+              <li class="item">
+                <a class="link" href="./index.html">Студия</a>
+              </li>
+              <li class="item">
+                <a class="link link-active" href="">Портфолио</a>
+              </li>
+              <li class="item">
+                <a class="link" href="">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="header-contacts">
             <li class="item">
-              <a class="link" href="./index.html">Студия</a>
+              <a class="email" href="mailto:info@example.com">info@example.com</a>
             </li>
             <li class="item">
-              <a class="link link-active" href="">Портфолио</a>
-            </li class="item">
-            <li>
-              <a class="link" href="">Контакты</a>
-            </li class="item">
+              <a class="phone" href="tel:+380991111111">+38 099 111 11 11</a>
+            </li>
           </ul>
-        </nav>
-        <ul class="header-contacts">
-          <li class="item">
-            <a class="email" href="mailto:info@example.com">info@example.com</a>
-          </li>
-          <li class="item">
-            <a class="phone" href="tel:+380991111111">+38 099 111 11 11</a>
-          </li>
-        </ul>
         </div>
       </div>
     </header>
@@ -69,7 +72,6 @@
             <li class="item"><button class="button" type="button">Маркетинг</button></li>
           </ul>
           <ul class="portfolio-list wrapper">
-
             <li class="item">
               <img
                 class="image"
@@ -186,7 +188,6 @@
                 <p class="description">Приложение</p>
               </div>
             </li>
-
           </ul>
         </div>
       </section>
