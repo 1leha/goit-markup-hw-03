@@ -12,15 +12,7 @@
       rel="stylesheet"
     />
 
-    <!-- 
-    !При подключении сыслки нормалайзера из задания к домашке в консоле выдает: Refused to apply
-    !style from 'http://127.0.0.1:5500/node_modules/modern-normalize/modern-normalize.css' because
-    !its MIME type ('text/html') is not a supported stylesheet MIME type, and strict MIME checking is
-    !enabled. во вкладке дитулза "нетверк" - ошибка 404.
-    !Поэтому подключил нормалайзер из видео Саши Репеты... -->
-    <!-- <link rel="stylesheet" href="https://github.com/sindresorhus/modern-normalize/blob/main/modern-normalize.css" /> -->
-
-    <!-- Нормалайзер из урока Саши Репеты -->
+    <!-- Нормалайзер из конспекта Саши Репеты -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -34,40 +26,38 @@
     <!-- Хедер -->
     <header class="header">
       <!-- Контейнер для контента -->
-      <div class="container">
-        <div class="wrapper">
-          <!-- Навигация -->
-          <nav class="header-navigation">
-            <a class="header-logo logo" href="./index.html"
-              ><span class="logo-blue">Web</span>Studio</a
-            >
-            <ul class="menu">
-              <li class="item">
-                <a class="link link-active" href="">Студия</a>
-              </li>
-              <li class="item">
-                <a class="link" href="./portfolio.html">Портфолио</a>
-              </li>
-              <li class="item">
-                <a class="link" href="">Контакты</a>
-              </li>
-            </ul>
-          </nav>
-          <ul class="header-contacts">
+      <div class="container wrapper">
+        <!-- Навигация -->
+        <nav class="header-navigation">
+          <a class="header-logo logo" href="./index.html"
+            ><span class="logo-blue">Web</span>Studio</a
+          >
+          <ul class="menu">
             <li class="item">
-              <a class="email" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <a class="link link-active" href="">Студия</a>
             </li>
             <li class="item">
-              <a class="phone" href="tel:+380991111111">+38 099 111 11 11</a>
+              <a class="link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="item">
+              <a class="link" href="">Контакты</a>
             </li>
           </ul>
-        </div>
+        </nav>
+        <ul class="header-contacts">
+          <li class="item">
+            <a class="email" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li class="item">
+            <a class="phone" href="tel:+380991111111">+38 099 111 11 11</a>
+          </li>
+        </ul>
       </div>
     </header>
 
     <!-- Основной контент -->
     <main class="main">
-      <section class="hero">
+      <section class="section hero">
         <!-- Контейнер для контента -->
         <div class="container">
           <h1 class="title">Эффективные решения<br />для вашего бизнеса</h1>
@@ -76,11 +66,11 @@
       </section>
 
       <!-- Секция особенности -->
-      <section class="peculiarities">
+      <section class="section peculiarities">
         <!-- Контейнер для контента -->
         <div class="container">
           <!-- Скрытый заголовок -->
-          <h2 class="title title-hidden">Особенности</h2>
+          <h2 class="visually-hidden">Особенности</h2>
           <ul class="list">
             <li class="item">
               <h3 class="title">Внимание к деталям</h3>
@@ -111,7 +101,7 @@
       </section>
 
       <!-- Секция специализация -->
-      <section class="specialization">
+      <section class="section specialization">
         <!-- Контейнер для контента -->
         <div class="container">
           <h2 class="title">Чем мы занимаемся</h2>
@@ -140,7 +130,7 @@
         </div>
       </section>
 
-      <section class="our-team">
+      <section class="section our-team">
         <!-- Контейнер для контента -->
         <div class="container">
           <h2 class="title">Наша команда</h2>
@@ -152,8 +142,10 @@
                 src="img/team_img1.jpg"
                 alt="Игорь Демьяненко. Product Designer"
               />
-              <h3 class="name">Игорь Демьяненко</h3>
-              <p class="profession">Product Designer</p>
+              <div class="our-team-content">
+                <h3 class="name">Игорь Демьяненко</h3>
+                <p class="profession">Product Designer</p>
+              </div>
             </li>
             <li class="item">
               <img
@@ -162,8 +154,10 @@
                 src="img/team_img2.jpg"
                 alt="Ольга Репина. Frontend Developer"
               />
-              <h3 class="name">Ольга Репина</h3>
-              <p class="profession">Frontend Developer</p>
+              <div class="our-team-content">
+                <h3 class="name">Ольга Репина</h3>
+                <p class="profession">Frontend Developer</p>
+              </div>
             </li>
             <li class="item">
               <img
@@ -172,8 +166,10 @@
                 src="img/team_img3.jpg"
                 alt="Николай Тарасов. Marketing"
               />
-              <h3 class="name">Николай Тарасов</h3>
-              <p class="profession">Marketing</p>
+              <div class="our-team-content">
+                <h3 class="name">Николай Тарасов</h3>
+                <p class="profession">Marketing</p>
+              </div>
             </li>
             <li class="item">
               <img
@@ -182,8 +178,10 @@
                 src="img/team_img4.jpg"
                 alt="Михаил Ермаков. UI Designer"
               />
-              <h3 class="name">Михаил Ермаков</h3>
-              <p class="profession">UI Designer</p>
+              <div class="our-team-content">
+                <h3 class="name">Михаил Ермаков</h3>
+                <p class="profession">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -199,13 +197,13 @@
         >
         <address class="address">
           <ul class="contacts">
-            <li>
+            <li class="contacts-item">
               <p class="location">г. Киев, пр-т Леси Украинки, 26</p>
             </li>
-            <li>
+            <li class="contacts-item">
               <a class="link email" href="mailto:info@example.com">info@example.com</a>
             </li>
-            <li>
+            <li class="contacts-item">
               <a class="link phone" href="tel:+380991111111">+38 099 111 11 11</a>
             </li>
           </ul>

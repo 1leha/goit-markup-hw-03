@@ -35,11 +35,12 @@ button {
   border: none;
 }
 
-/* Обнуляет подчеркивание ссылок */
 p {
   margin: 0;
   padding: 0;
 }
+
+/* Обнуляет подчеркивание ссылок */
 a {
   text-decoration: none;
   margin: 0;
@@ -70,7 +71,19 @@ img {
   height: auto;
 }
 
-section {
+/* Стиль для скрытых заголовков */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -154,7 +167,7 @@ section {
   font-weight: 500;
 }
 .header .item:not(:last-child) {
-  padding-right: 50px;
+  margin-right: 50px;
 }
 
 /* *Стили для линков меню */
@@ -193,18 +206,13 @@ section {
 
 /* *Стили для заголовков */
 .title {
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-}
-
-/* Стили для скрытых заголовков
-(не изучали. Возможно не так, потом переделаю...) */
-.title-hidden {
-  display: none;
-  font-size: var(--fsize-title);
 }
 
 /* *Стили для Героя */
@@ -266,6 +274,8 @@ section {
   margin-right: 30px;
 }
 .peculiarities .title {
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -274,8 +284,6 @@ section {
   text-transform: uppercase;
 }
 .peculiarities .text {
-  margin-top: 10px;
-
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -285,9 +293,7 @@ section {
 
 /* Стили для "Чем мы занимаемся"
  */
-.specialization .title {
-  margin-bottom: 50px;
-}
+
 .specialization .wrapper {
   justify-content: space-between;
   align-items: center;
@@ -301,12 +307,9 @@ section {
 .our-team {
   background-color: var(--color-third);
 }
-.our-team .title {
-  margin-bottom: 50px;
-}
 
 .our-team .wrapper {
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -319,7 +322,13 @@ section {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.our-team .image {
+
+.our-team .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.our-team-content {
+  margin-top: 30px;
   margin-bottom: 30px;
 }
 .our-team .name {
@@ -332,8 +341,6 @@ section {
   letter-spacing: 0.03em;
 }
 .our-team .profession {
-  margin-bottom: 30px;
-
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -375,7 +382,9 @@ section {
 
   border: 1px solid var(--color-cards-portfolio);
 }
-.portfolio-list .title {
+.card-title {
+  margin-bottom: 4px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -384,7 +393,7 @@ section {
 
   color: var(--color-primary);
 }
-.portfolio-list .description {
+.card-description {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
@@ -412,7 +421,7 @@ section {
 
   color: var(--color-white);
 }
-.address .contacts > li:not(:last-child) {
+.contacts-item:not(:last-child) {
   margin-bottom: 9px;
 }
 .address .link {
